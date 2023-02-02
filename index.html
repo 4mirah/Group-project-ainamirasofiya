@@ -1,0 +1,404 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Home</title>
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+            }
+
+            li a, .dropbtn {
+              display: inline-block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover, .dropdown:hover .dropbtn {
+              background-color: red;
+            }
+            
+            li.dropdown {
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+            
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            </style>
+            
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <style>
+                * {box-sizing: border-box}
+                body {font-family: Verdana, sans-serif; margin:0}
+                .mySlides {display: none}
+                img {vertical-align: middle;}
+                
+                /* Slideshow container */
+                .slideshow-container 
+                {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
+                
+                /* Next & previous buttons */
+                .prev, .next 
+                {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+                
+                /* Position the "next button" to the right */
+                .next 
+                {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+                
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover 
+                {
+                    background-color: rgba(0,0,0,0.8);
+                }
+                
+                /* Caption text */
+                .text 
+                {
+                    color: #f2f2f2;
+                    font-size: 15px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    bottom: 8px;
+                    width: 100%;
+                    text-align: center;
+                }
+                
+                /* Number text (1/3 etc) */
+                .numbertext 
+                {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                }
+                
+                /* The dots/bullets/indicators */
+                .dot 
+                {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                
+                .active, .dot:hover 
+                {
+                  background-color: #717171;
+                }
+                
+                /* Fading animation */
+                .fade 
+                {
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+                }
+                
+                @keyframes fade 
+                {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) 
+                {
+                  .prev, .next,.text {font-size: 11px}
+                }
+            </style>
+
+            <style>
+                div.gallery {
+                  margin: 5px;
+                  border: 1px solid #ccc;
+                  float: left;
+                  width: 110px;
+                }
+                
+                div.gallery:hover {
+                  border: 1px solid #777;
+                }
+                
+                div.gallery img {
+                  width: 100%;
+                  height: auto;
+                }
+                
+                div.desc {
+                  padding: 15px;
+                  text-align: center;
+                }
+            </style>
+                
+            <style>
+                  * {
+                    box-sizing: border-box;
+                  }
+                  
+                  .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 5px;
+                  }
+                  
+                  /* Clearfix (clear floats) */
+                  .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                  }
+            </style>
+
+            <style>
+                p.inset {border-style: inset; background-color: silver; width:100%}
+            </style>
+    </head>
+    <body>
+        <center>
+            <img src="gambar/logo 1.png" width="5%" height="100px">
+            <img src="gambar/logo 2.png" width="5%" height="100px">
+            <img src="gambar/PPAK.png" width="5%" height="100px">
+        </center>
+        <ul>
+            <li class="dropdown" style="float:right"><a class="dropbtn">Contact us</a>
+                <div class="dropdown-content">
+                    <a href="https://www.kelantanlibrary.gov.my/v3/index.php/en/contact-us/directory-of-officers">Directory of officer</a>
+                    <a href="ask librarian.html">Ask librarian</a>
+                    <a href="our location.html">Our location</a>
+                </div>
+            </li>
+            <li style="float:right"><a href="services.html">Services</a></li>
+            <li class="dropdown"style="float:right"><a class="dropbtn">Division</a>
+                <div class="dropdown-content">
+                    <a href="management services division.html">Management services division</a>
+                    <a href="planning & development unit.html">Planning & development unit</a>
+                    <a href="collection development & mgt.html">Collection development and management</a>
+                    <a href="info.techno.unit.html">Information technology unit</a>
+                    <a href="library & info services div.html">Library & information services division</a>
+                    <a href="lib.net.div.html">Library network division</a>
+                </div>
+            </li>
+            <li class="dropdown"style="float:right"><a class="dropbtn">About us</a>
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="function.html">Function</a>
+                    <a href="vision, mision & objective.html">Vision, mission & objective</a>
+                    <a href="organizational chart.html">Organizational chart</a>
+                    <a href="core services.html">Core services</a>
+                </div>
+            </li>
+            <li style="float:left"><a class="active" href="index.html">Home</a></li>
+        </ul>
+        <div class="none" style="margin-top: 10px;">
+            <a href="https://www.kelantanlibrary.gov.my/v3/index.php/en/help/faq"><img src="gambar/FAQ.png" style="width: 5%; height: 20px; float: right;"></a>
+            <a href="https://aplikasi1.kelantan.gov.my/eaduan/"><img src="gambar/Complain & feedback.png" style="width: 5%; height: 20px; margin-left: 910px;"></a>
+            <a href="log in.html"><img src="gambar/login.png" style="width: 7%; height: 45px; margin-left: 830px; margin-top: -30px;"></a>
+          </div>
+          
+          <div class="search" style="margin-top: 10px; color: white;">
+          <form action="/action_page.php;">
+              <label for="gsearch"> Search:</label>
+              <input type="search" id="gsearch" name="gsearch">
+              <input type="submit" value="Submit">
+          </form>
+          </div>
+
+          <div class="image">
+            <div class="slideshow-container">
+            
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 2</div>
+                  <img src="gambar/img 1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 2</div>
+                  <img src="gambar/img 2.jpg" style="width:100%">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+          </div>   
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+        </div>
+  
+        <div class="none1">
+        </div>
+        
+        <div class="contents" style="margin-left: 175px; margin-bottom: 10px; margin-top: 20px;">
+          <h2 class="inset" style="margin-left: 20px;">Our Services</h2>
+        <div class="row">
+          <div class="column">
+            <a target="_blank" href="http://catalog.kelantanlibrary.gov.my/">
+            <img src="gambar/Web OPAC.png" width="50%" height="120px" style="margin-left: 70px;">
+            <p style="margin-left: 100px;">Web OPAC</p>
+            </a>
+          </div>
+          <div class="column">
+            <a target="_blank" href="https://www.kelantanlibrary.gov.my/v3/index.php/en/our-services/81-electronic-resources">
+            <img src="gambar/Dig lib.png" width="50%" height="120px" style="margin-left: 20px;">
+            <p style="margin-left: 50px;">Digital library</p>
+            </a>
+          </div>
+          <div class="column">
+            <a target="_blank" href="https://www.kelantanlibrary.gov.my/v3/index.php/en/publication">
+            <img src="gambar/Publisher.png" width="50%" height="120px">
+            <p style="margin-left: 30px;">Publication</p>
+            </a>
+          </div>
+        </div>
+        </div>
+        
+        <div class="activities" style="margin-right: 175px; margin-bottom: 20px; background-color: white; opacity: 80%;;">
+          <p><b>Activities</b></p>
+          <p>No announcements / activity / quotation at this time</p><br>
+          <p><b>News</b></p>
+          <p>There are no articles in this category. If subcategories display on this page, they may have articles.</p><br>
+          <p><b>Archive news</b></p>
+          <a href="https://www.kelantanlibrary.gov.my/v3/index.php/ms/arkib-berita/525-program-keluargaku-keluarga-membaca-2022">
+            <p>PROGRAM KELUARGAKU KELUARGA MEMBACA 2022</p>
+          <a href="https://www.kelantanlibrary.gov.my/v3/index.php/ms/arkib-berita/316-lawatan-dari-sekolah-rendah-ugama-al-falah-kampung-sat-tanah-merah">
+            <p>LAWATAN DARI SEKOLAH RENDAH UGAMA AL-FALAH KAMPUNG SAT TANAH MERAH</p>
+          <a href="https://www.kelantanlibrary.gov.my/v3/index.php/ms/arkib-berita/315-taklimat-hrmis-kepada-kakitangan-perbadanan-perpustakaan-awam-kelantan">
+            <p>TAKLIMAT HRMIS KEPADA KAKITANGAN PERBADANAN PERPUSTAKAAN AWAM KELANTAN</p>
+          </a>
+        </div>
+        <br>
+        <div class="contents" style="margin-left: 175px; margin-bottom: 10px; margin-top: 20px;">
+          <h2 class="inset" style="margin-left: 20px;">Staff</h2>
+        <div class="row">
+          <div class="column">
+            <a target="_blank" href="http://210.186.147.225:8000/">
+            <img src="gambar/koha.png" width="50%" height="120px" style="margin-left: 70px;">
+            <p style="margin-left: 100px;">KOHA</p>
+            </a>
+          </div>
+          <div class="column">
+            <a target="_blank" href="https://aplikasi1.kelantan.gov.my/espia2/">
+            <img src="gambar/eSPIA.png" width="50%" height="120px" style="margin-left: 20px;">
+            <p style="margin-left: 50px;">e-SPIA</p>
+            </a>
+          </div>
+          <div class="column">
+            <a target="_blank" href="http://www.eghrmis.gov.my/">
+            <img src="gambar/HRMIS.png" width="50%" height="120px">
+            <p style="margin-left: 30px;">HRMIS</p>
+            </a>
+          </div>
+        </div>
+        </div>
+        <div class="blank">
+        </div>
+    </body>
+    <footer>
+        <p style="color: white; margin-left: 70px;">Surf via smartphone</p>
+        <img src="gambar/QR.png" style="height: 100px; width: 15%; margin-top: 10px; margin-left: 35px;">
+        <p style="color: white;">Scan the QR code with your mobile device</p>
+        <center style="color: white; margin-top: -10px;">
+            Copyright © 2014 - 2022
+            Kelantan Public Library Corporation
+        </center>
+        <p style="text-align: right; color: white; margin-top: -150px;">
+            Contact us:
+
+Kelantan Public Library Corporation<br>
+Jalan Padang Perdana<br>
+15572 Kota Bharu, Kelantan<br>
+Coordinate : 6.1225099,102.2401629<br>
+Phone : +60 9-744 4522, +60 9-741 2522<br>
+Circulation Counter : +60 9-741 2520<br>
+Fax : +60 9-748 7736<br>
+Email : ppak[at]kelantan.gov.my<br>
+        </p>
+    </footer>
+</html>
